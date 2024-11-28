@@ -1,0 +1,34 @@
+name: ppu_feed_project
+description: "A new Flutter project."
+publish_to: 'none' # هذا السطر يمنع نشر الحزمة إلى pub.dev إذا كانت حزمة خاصة بك.
+
+# الإصدار الحالي للتطبيق مع رقم البناء
+version: 1.0.0+1
+
+# تحديد البيئة التي يعتمد عليها المشروع
+environment:
+  sdk: ^3.5.4 # يستخدم الإصدار 3.5.4 من Dart SDK أو أي إصدار أحدث متوافق.
+
+# إضافة المكتبات الخارجية التي يحتاجها التطبيق
+dependencies:
+  flutter:
+    sdk: flutter # مكتبة Flutter الأساسية
+  http: ^0.13.4 # مكتبة HTTP للتفاعل مع واجهات API
+  cupertino_icons: ^1.0.8 # مكتبة تضم أيقونات النظام iOS (اختياري)
+
+
+# مكتبات لتطوير الاختبارات واتباع الممارسات الجيدة في البرمجة
+dev_dependencies:
+  flutter_test:
+    sdk: flutter # مكتبة لاختبارات Flutter
+  flutter_lints: ^4.0.0 # حزمة تحتوي على قواعد فحص (Linting) الكود
+
+# تعريف إعدادات Flutter
+flutter:
+  # تمكين استخدام تصميم المواد (Material Design) في التطبيق
+  uses-material-design: true
+  
+  # تحديد الأصول التي سيتم استخدامها في التطبيق
+  assets:
+    - assets/images/ppulogo.png  # إضافة الشعار هنا من مجلد الأصول (التأكد من المسار الصحيح للصورة)
+
